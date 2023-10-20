@@ -23,29 +23,33 @@
     <!-- header_HM_1 -->
     <header class="header">
       <div class="header-container container">
-        <nav class="nav">
+        <nav class="header-nav">
           <a href="./index.html" class="header-logo link"
-            >Web<span class="studio-color">Studio</span></a
+            >Web<span class="header-studio-color">Studio</span></a
           >
-          <ul class="list nav-list">
+          <ul class="header-nav-list list">
             <li>
-              <a href="./index.html" class="nav-link link current">Studio</a>
+              <a href="./index.html" class="header-nav-link link current"
+                >Studio</a
+              >
             </li>
             <li>
-              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
+              <a href="./portfolio.html" class="header-nav-link link"
+                >Portfolio</a
+              >
             </li>
-            <li><a href="" class="nav-link link">Contacts</a></li>
+            <li><a href="" class="header-nav-link link">Contacts</a></li>
           </ul>
         </nav>
-        <address class="address-list">
-          <ul class="list nav-list">
+        <address class="header-address-list">
+          <ul class="header-nav-list list">
             <li>
-              <a href="mailto:info@devstudio.com" class="link contact"
+              <a href="mailto:info@devstudio.com" class="header-contact link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="link contact"
+              <a href="tel:+110001111111" class="header-contact link"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -58,7 +62,7 @@
     <main>
       <!-- Hero_HM_1 -->
       <section class="hero">
-        <div class="container">
+        <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-button" data-modal-open>
             Order Service
@@ -66,54 +70,56 @@
         </div>
       </section>
 
-      <!-- Section_1 -->
+      <!-- Section 1 About -->
       <section class="about">
-        <div class="container">
-          <h2 class="visually-hidden">Something on english</h2>
-          <ul class="list">
-            <li class="card">
-              <div class="card-icon">
-                <svg class="icon" width="64" height="64">
+        <div class="about-container container">
+          <h2 class="visually-hidden">About us</h2>
+          <ul class="about-list list">
+            <li class="about-card">
+              <div class="about-icon-card">
+                <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="secondary-title">Strategy</h3>
+              <h3 class="about-secondary-title secondary-title">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="card">
-              <div class="card-icon">
-                <svg class="icon" width="64" height="64">
+            <li class="about-card">
+              <div class="about-icon-card">
+                <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="secondary-title">Punctuality</h3>
+              <h3 class="about-secondary-title secondary-title">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="card">
-              <div class="card-icon">
-                <svg class="icon" width="64" height="64">
+            <li class="about-card">
+              <div class="about-icon-card">
+                <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="secondary-title">Diligence</h3>
+              <h3 class="about-secondary-title secondary-title">Diligence</h3>
               <p class="text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="card">
-              <div class="card-icon">
-                <svg class="icon" width="64" height="64">
+            <li class="about-card">
+              <div class="about-icon-card">
+                <svg class="about-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="secondary-title">Technologies</h3>
+              <h3 class="about-secondary-title secondary-title">
+                Technologies
+              </h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -123,7 +129,7 @@
         </div>
       </section>
 
-      <!-- Section_2 -->
+      <!-- Section 2 Doing -->
       <section class="doing">
         <div class="container">
           <h2 class="main-title">What are we doing</h2>
@@ -156,7 +162,7 @@
         </div>
       </section>
 
-      <!-- Section_3 -->
+      <!-- Section 3 Team-->
       <section class="team">
         <div class="container">
           <h2 class="main-title">Our Team</h2>
@@ -333,7 +339,7 @@
         </div>
       </section>
 
-      <!-- Section_4 -->
+      <!-- Section 4 Customers-->
       <section class="customers">
         <div class="container">
           <h2 class="main-title">Customers</h2>
@@ -451,6 +457,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal Window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="button-close" data-modal-close>
@@ -533,6 +541,8 @@
         </form>
       </div>
     </div>
+
+    <!-- JS -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
