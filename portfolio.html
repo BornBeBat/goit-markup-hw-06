@@ -29,19 +29,27 @@
           >
           <ul class="header-nav-list list">
             <li>
-              <a href="./index.html" class="header-nav-link link">Studio</a>
+              <a
+                href="./index.html"
+                class="header-nav-link text-medium link current"
+                >Studio</a
+              >
             </li>
             <li>
-              <a href="./portfolio.html" class="header-nav-link link current"
+              <a
+                href="./portfolio.html"
+                class="header-nav-link text-medium link"
                 >Portfolio</a
               >
             </li>
-            <li><a href="" class="header-nav-link link">Contacts</a></li>
+            <li>
+              <a href="" class="header-nav-link text-medium link">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <address class="header-address-list">
-          <ul class="header-nav-list list">
-            <li>
+        <address class="header-address">
+          <ul class="header-address-list list">
+            <li class="header-email">
               <a href="mailto:info@devstudio.com" class="header-contact link"
                 >info@devstudio.com</a
               >
@@ -53,6 +61,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -358,5 +375,80 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button tupe="button" class="menu-close-toggle js-close-menu">
+        <svg class="menu-icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="header-nav-list-mobile list">
+        <li class="header-nav-item-mobile">
+          <a href="./index.html" class="header-nav-link-mobile link">Studio</a>
+        </li>
+        <li class="header-nav-item-mobile">
+          <a href="./portfolio.html" class="header-nav-link-mobile link current"
+            >Portfolio</a
+          >
+        </li>
+        <li class="header-nav-item-mobile">
+          <a href="" class="header-nav-link-mobile last link">Contacts</a>
+        </li>
+      </ul>
+      <address class="header-address-list-mobile">
+        <ul class="header-nav-list-mobile list">
+          <li>
+            <a
+              href="tel:+110001111111"
+              class="header-contact-mobile phone text link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="header-contact-mobile-mail">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-contact-mobile mail text link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="team-card-content">
+        <ul class="team-card-list mobile list">
+          <li class="team-card-item">
+            <a href="" class="team-card-social-link">
+              <svg class="team-card-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-card-item">
+            <a href="" class="team-card-social-link">
+              <svg class="team-card-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-card-item">
+            <a href="" class="team-card-social-link">
+              <svg class="team-card-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-card-item">
+            <a href="" class="team-card-social-link">
+              <svg class="team-card-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
