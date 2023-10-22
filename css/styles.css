@@ -45,10 +45,6 @@ button {
   letter-spacing: 0.64px;
   line-height: 1.5;
 }
-::-webkit-scrollbar {
-  width: 0px;
-  background: rgba(255, 255, 255, 0);
-}
 /* =================================/Reset====================== */
 
 /* mobile menu */
@@ -79,13 +75,13 @@ button {
   padding: 0 16px;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding: 0 16px;
   }
 }
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
@@ -263,7 +259,7 @@ button {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-container,
   .menu-toggle {
     display: none;
@@ -324,7 +320,7 @@ button {
     color: var(--hover-link);
   }
 }
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .header-address-list {
     display: flex;
     flex-direction: row;
@@ -392,7 +388,7 @@ button {
   transition: background-color var(--delay) var(--delay-style);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero {
     width: 768px;
     padding-left: 136px;
@@ -409,7 +405,7 @@ button {
     max-width: 496px;
   }
 }
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .hero {
     width: 1440px;
     padding: 188px 472px;
@@ -449,7 +445,7 @@ button {
   letter-spacing: 0.72px;
   margin-bottom: 8px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .about-secondary-title {
     text-align: start;
   }
@@ -457,7 +453,7 @@ button {
     width: calc((100% - 24px) / 2);
   }
 }
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .about-card {
     width: calc((100% - 24px * 3) / 4);
   }
@@ -486,7 +482,7 @@ button {
 .doing {
   display: none;
 }
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .doing {
     display: block;
   }
@@ -561,7 +557,8 @@ button {
 .team-card-icon {
   fill: var(--secondary-background-color);
 }
-@media (min-width: 768px) {
+
+@media screen and (min-width: 768px) {
   .team-container {
     padding: 96px 108px;
   }
@@ -572,7 +569,7 @@ button {
     width: calc((100% - 24px) / 2);
   }
 }
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .team-container {
     padding: 120px 15px;
   }
@@ -619,7 +616,7 @@ button {
 .customers-icon {
   fill: currentColor;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .customers-container {
     padding: 96px 108px;
   }
@@ -630,7 +627,7 @@ button {
     width: calc((100% - 24px * 2) / 3);
   }
 }
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .customers-container {
     padding: 120px 15px;
   }
@@ -752,7 +749,7 @@ button {
   margin-left: 16px;
   fill: currentColor;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .footer-logo-container,
   .footer-form-input {
     width: 264px;
@@ -780,7 +777,7 @@ button {
   }
 }
 
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .footer-container {
     padding: 100px 15px;
     gap: 80px;
@@ -792,6 +789,12 @@ button {
   .footer-social-link:hover,
   .footer-social-link:focus {
     background-color: var(--footer-green);
+  }
+  .footer-form-input {
+    opacity: 1;
+  }
+  .footer-form-input::placeholder {
+    opacity: 1;
   }
 }
 /* ========================================/Footer============================ */
@@ -816,7 +819,7 @@ button {
   border: 1px solid var(--CORNFLOWER);
   background-color: var(--secondary-background-color);
 }
-@media (max-width: 1158px) {
+@media screen and (max-width: 1158px) {
   .portfolio-current-btn {
     background-color: var(--hover-link);
     color: var(--main-background-color);
@@ -843,7 +846,7 @@ button {
 .portfolio-works-title {
   margin-bottom: 8px;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .portfolio-container {
     padding-top: 64px;
     padding-bottom: 96px;
@@ -859,7 +862,7 @@ button {
     padding: 12px 24px;
   }
 }
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .portfolio-container {
     padding-top: 100px;
     padding-bottom: 120px;
