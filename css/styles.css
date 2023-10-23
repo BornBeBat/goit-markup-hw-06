@@ -10,8 +10,7 @@
   --DAIRY: #fcfcfc;
   --footer-green: #31d0aa;
 
-  --delay: 250ms;
-  --delay-style: cubic-bezier(0.4, 0, 0.2, 1);
+  --trns-bezier: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -178,7 +177,7 @@ button {
   z-index: 999;
 
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms var(--trns-bezier);
 }
 
 .menu-container.is-open {
@@ -227,7 +226,7 @@ button {
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.11; /* 111.111% */
+  line-height: 1.11;
   letter-spacing: 0.72px;
   display: block;
   margin-bottom: 40px;
@@ -273,7 +272,7 @@ button {
     display: block;
     padding: 24px 0;
     position: relative;
-    transition: color var(--delay) var(--delay-style);
+    transition: color var(--trns-bezier);
   }
   .header-nav-link:hover,
   .header-nav-link:focus {
@@ -310,7 +309,7 @@ button {
   .header-contact {
     font-style: normal;
     color: var(--main-text-color);
-    transition: color var(--delay) var(--delay-style);
+    transition: color var(--trns-bezier);
   }
   .header-email {
     margin-bottom: 12px;
@@ -395,7 +394,7 @@ button {
   border: none;
 
   border-radius: 4px;
-  transition: background-color var(--delay) var(--delay-style);
+  transition: background-color var(--trns-bezier);
 }
 
 @media screen and (min-width: 768px) {
@@ -561,7 +560,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color var(--delay) var(--delay-style);
+  transition: background-color var(--trns-bezier);
 }
 
 .team-card-icon {
@@ -619,8 +618,7 @@ button {
   align-items: center;
   justify-content: center;
   color: var(--LIGHT-SLATE);
-  transition: border-color var(--delay) var(--delay-style),
-    color var(--delay) var(--delay-style);
+  transition: border-color var(--trns-bezier), color var(--trns-bezier);
 }
 
 .customers-icon {
@@ -701,7 +699,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color var(--delay) var(--delay-style);
+  transition: background-color var(--trns-bezier);
 }
 
 .footer-social-icon {
@@ -878,10 +876,8 @@ button {
     padding-bottom: 120px;
   }
   .portfolio-btn {
-    transition: color var(--delay) var(--delay-style),
-      background-color var(--delay) var(--delay-style),
-      border-color var(--delay) var(--delay-style),
-      box-shadow var(--delay) var(--delay-style);
+    transition: color var(--trns-bezier), background-color var(--trns-bezier),
+      border-color var(--trns-bezier), box-shadow var(--trns-bezier);
   }
   .portfolio-btn:hover,
   .portfolio-btn:focus {
@@ -899,7 +895,7 @@ button {
     overflow: hidden;
   }
   .portfolio-works-link {
-    transition: box-shadow var(--delay) var(--delay-style);
+    transition: box-shadow var(--trns-bezier);
   }
   .portfolio-works-link:hover,
   .portfolio-works-link:focus {
@@ -916,7 +912,7 @@ button {
     height: 100%;
     width: 100%;
     transform: translateY(100%);
-    transition: transform var(--delay) var(--delay-style);
+    transition: transform var(--trns-bezier);
   }
   .portfolio-works-link:hover .portfolio-label-text,
   .portfolio-works-link:focus .portfolio-label-text {
@@ -933,10 +929,9 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--delay) var(--delay-style),
-    visibility var(--delay) var(--delay-style);
+  transition: opacity var(--trns-bezier), visibility var(--trns-bezier);
 }
-.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -953,7 +948,7 @@ button {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform var(--delay) var(--delay-style);
+  transition: transform var(--trns-bezier);
 }
 .modal-button-close {
   position: absolute;
@@ -968,8 +963,7 @@ button {
   background-color: var(--CORNFLOWER);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-  transition: background-color var(--delay) var(--delay-style),
-    border var(--delay) var(--delay-style);
+  transition: background-color var(--trns-bezier), border var(--trns-bezier);
 }
 .modal-button-close:hover,
 .modal-button-close:focus {
@@ -977,7 +971,7 @@ button {
   border: none;
 }
 .modal-button-close-icon {
-  transition: fill var(--delay) var(--delay-style);
+  transition: fill var(--trns-bezier);
 }
 .modal-button-close:hover > .modal-button-close-icon,
 .modal-button-close:focus > .modal-button-close-icon {
@@ -1011,14 +1005,14 @@ button {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  transition: border-color var(--delay) var(--delay-style);
+  transition: border-color var(--trns-bezier);
 }
 .modal-icon {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill var(--delay) var(--delay-style);
+  transition: fill var(--trns-bezier);
 }
 
 .modal-input-container:focus-within .modal-icon {
@@ -1037,7 +1031,7 @@ button {
   padding: 8px 16px;
   outline: transparent;
   resize: none;
-  transition: border-color var(--delay) var(--delay-style);
+  transition: border-color var(--trns-bezier);
 }
 
 .modal-form-last-container:focus-within .modal-textarea {
@@ -1052,8 +1046,8 @@ button {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color var(--delay) var(--delay-style),
-    border var(--delay) var(--delay-style), fill var(--delay) var(--delay-style);
+  transition: background-color var(--trns-bezier), border var(--trns-bezier),
+    fill var(--trns-bezier);
   align-items: center;
   justify-content: center;
   fill: transparent;
@@ -1078,6 +1072,6 @@ button {
   background-color: var(--logo-color);
   border: none;
   border-radius: 4px;
-  transition: background-color var(--delay) var(--delay-style);
+  transition: background-color var(--trns-bezier);
 }
 /* =========================================/Modal Window================================== */
