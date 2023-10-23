@@ -939,6 +939,7 @@ button {
 .is-hidden > .modal-window {
   transform: translate(-50%, -50%) scale(0.1);
 }
+
 .modal-window {
   position: absolute;
   padding: 72px 24px 24px 24px;
