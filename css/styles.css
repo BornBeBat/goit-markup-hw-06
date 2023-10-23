@@ -666,7 +666,6 @@ button {
   align-items: center;
   justify-content: center;
   gap: 72px;
-  max-width: 100%;
 }
 .footer-logo {
   margin-bottom: 16px;
@@ -709,10 +708,8 @@ button {
 .footer-logo,
 .footer-social-title,
 .footer-form-text {
-  display: inline-flex;
-  max-width: 398px;
-  width: 100%;
-  justify-content: center;
+  display: block;
+  text-align: center;
 }
 .footer-form-text {
   color: var(--main-background-color);
@@ -726,12 +723,20 @@ button {
   align-items: center;
   gap: 16px;
 }
+
+.footer-form-container {
+  width: 100%;
+  max-width: 398px;
+}
+.footer-form-label {
+  width: 100%;
+}
 .footer-form-input {
+  width: 100%;
   background-color: transparent;
   line-height: 2;
-
+  flex-shrink: 0;
   padding-left: 16px;
-  width: 264px;
   height: 40px;
   border: 1px solid var(--main-background-color);
   color: var(--main-background-color);
@@ -778,16 +783,14 @@ button {
     justify-content: start;
     align-items: start;
     gap: 72px 24px;
-
-    margin-left: 96px;
-    max-width: 700px;
+    padding-left: 108px;
   }
-
   .footer-logo,
   .footer-social-title,
   .footer-form-text {
-    display: block;
+    text-align: start;
   }
+
   .footer-form {
     flex-direction: row;
     gap: 24px;
@@ -803,6 +806,7 @@ button {
     gap: 80px;
     margin: 0 auto;
     max-width: 1158px;
+    padding-left: 15px;
   }
   .footer-logo-container {
     margin-right: 40px;
