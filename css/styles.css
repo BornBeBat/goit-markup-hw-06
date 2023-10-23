@@ -77,7 +77,6 @@ button {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 16px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -347,7 +346,8 @@ button {
 /* ============================Hero==================== */
 .hero {
   max-width: 428px;
-  padding: 112px 54px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -369,7 +369,6 @@ button {
   }
 }
 .hero-container {
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 72px;
@@ -401,8 +400,6 @@ button {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    padding-left: 136px;
-    padding-right: 136px;
   }
   .hero-container {
     gap: 36px;
@@ -418,7 +415,8 @@ button {
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 1440px;
-    padding: 188px 472px;
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
   .hero-container {
     gap: 36px;
@@ -433,7 +431,7 @@ button {
 /* ============================/Hero============================= */
 
 /* ============================Section 1 About=========================== */
-.about-container {
+.about {
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -512,16 +510,18 @@ button {
 /* ===================================Section 3 Team========================= */
 .team {
   background-color: var(--secondary-background-color);
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-.team-container {
-  padding: 96px 82px;
-}
+
 .team-main-title {
   margin-bottom: 72px;
 }
 .team-list {
   flex-wrap: wrap;
   gap: 72px;
+  max-width: 264px;
+  margin: 0 auto;
 }
 .team-element {
   background-color: var(--main-background-color);
@@ -533,15 +533,12 @@ button {
 .team-card-content {
   padding: 32px 0;
 }
-.team-secondary-title {
-  text-align: center;
-  margin-bottom: 8px;
-}
-
+.team-secondary-title,
 .team-card-text {
   text-align: center;
   margin-bottom: 8px;
 }
+
 .team-card-list {
   display: flex;
   justify-content: center;
@@ -567,19 +564,21 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .team-container {
-    padding: 96px 108px;
-  }
   .team-list {
     gap: 64px 24px;
+    max-width: calc(264px * 2 + 24px);
   }
   .team-element {
     width: calc((100% - 24px) / 2);
   }
 }
 @media screen and (min-width: 1158px) {
-  .team-container {
-    padding: 120px 15px;
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list {
+    max-width: calc(264px * 4 + 24px * 3);
   }
   .team-element {
     width: calc((100% - 24px * 3) / 4);
@@ -593,7 +592,7 @@ button {
 /* ==================================/Section 3 Team==================== */
 
 /* ==================================Section 4 Customers ==================== */
-.customers-container {
+.customers {
   padding-bottom: 96px;
   padding-top: 96px;
 }
@@ -624,22 +623,23 @@ button {
   fill: currentColor;
 }
 @media screen and (min-width: 768px) {
-  .customers-container {
-    padding: 96px 108px;
-  }
   .customers-list {
+    max-width: 552px;
     gap: 72px 24px;
+    margin: 0 auto;
   }
   .customers-item {
     width: calc((100% - 24px * 2) / 3);
   }
 }
 @media screen and (min-width: 1158px) {
-  .customers-container {
-    padding: 120px 15px;
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .customers-list {
     gap: 24px;
+    max-width: 100%;
   }
   .customers-item {
     width: calc((100% - 120px) / 6);
@@ -657,14 +657,16 @@ button {
 
 .footer {
   background-color: var(--main-title-color);
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer-container {
-  padding: 96px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 72px;
+  max-width: 100%;
 }
 .footer-logo {
   margin-bottom: 16px;
@@ -708,12 +710,14 @@ button {
 .footer-social-title,
 .footer-form-text {
   display: inline-flex;
+  max-width: 398px;
   width: 100%;
   justify-content: center;
 }
 .footer-form-text {
   color: var(--main-background-color);
   margin-bottom: 16px;
+  max-width: 100%;
 }
 
 .footer-form {
@@ -727,8 +731,7 @@ button {
   line-height: 2;
 
   padding-left: 16px;
-
-  width: 398px;
+  width: 264px;
   height: 40px;
   border: 1px solid var(--main-background-color);
   color: var(--main-background-color);
@@ -758,7 +761,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer-logo-container,
-  .footer-form-input,
   .footer-text {
     width: 264px;
   }
@@ -766,13 +768,19 @@ button {
   .footer-social-container {
     width: 208px;
   }
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
   .footer-container {
-    padding: 96px 164px 96px 108px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: start;
     align-items: start;
     gap: 72px 24px;
+
+    margin-left: 96px;
+    max-width: 700px;
   }
 
   .footer-logo,
@@ -787,9 +795,14 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .footer-container {
-    padding: 100px 15px;
     gap: 80px;
+    margin: 0 auto;
+    max-width: 1158px;
   }
   .footer-logo-container {
     margin-right: 40px;
@@ -807,7 +820,7 @@ button {
 /* ========================================/Footer============================ */
 
 /* ========================================Page 2 portfolio============================== */
-.portfolio-container {
+.portfolio {
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -854,7 +867,7 @@ button {
   margin-bottom: 8px;
 }
 @media screen and (min-width: 768px) {
-  .portfolio-container {
+  .portfolio {
     padding-top: 64px;
     padding-bottom: 96px;
   }
@@ -870,7 +883,7 @@ button {
   }
 }
 @media screen and (min-width: 1158px) {
-  .portfolio-container {
+  .portfolio {
     padding-top: 100px;
     padding-bottom: 120px;
   }
