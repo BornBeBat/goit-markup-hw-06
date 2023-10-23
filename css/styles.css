@@ -241,6 +241,7 @@ button {
   margin-bottom: 48px;
 }
 .team-card-list.mobile {
+  padding: 0;
   justify-content: start;
   gap: 56px;
 }
