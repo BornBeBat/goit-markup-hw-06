@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=320, initial-scale=1.0" />
+    <!-- BAT Icon for the site tab -->
     <link rel="shortcut icon" href="./images/bat.svg" type="image/x-icon" />
     <title>My first home work</title>
+    <!-- add google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- modern normalaiz -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -18,6 +21,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Own CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="scrol">
@@ -150,7 +157,7 @@
         <div class="doing-container container">
           <h2 class="doing-main-title main-title">What are we doing</h2>
           <ul class="doing-list list">
-            <li class="doing-card">
+            <li class="doing-card" data-aos="flip-left">
               <img
                 srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x"
                 src="./images/img1.jpg"
@@ -159,7 +166,7 @@
                 height="300"
               />
             </li>
-            <li class="card">
+            <li class="card" data-aos="flip-left" data-aos-delay="300">
               <img
                 srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
                 src="./images/img2.jpg"
@@ -168,7 +175,7 @@
                 height="300"
               />
             </li>
-            <li class="card">
+            <li class="card" data-aos="flip-left" data-aos-delay="600">
               <img
                 srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
                 src="./images/img3.jpg"
@@ -186,7 +193,12 @@
         <div class="team-container container">
           <h2 class="team-main-title main-title">Our Team</h2>
           <ul class="team-list list">
-            <li class="team-element">
+            <li
+              class="team-element"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <img
                 srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 src="./images/tom.jpg"
@@ -231,7 +243,13 @@
                 </ul>
               </div>
             </li>
-            <li class="team-element">
+            <li
+              class="team-element"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="750"
+              data-aos-delay="750"
+            >
               <img
                 srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
                 src="./images/mark.jpg"
@@ -274,7 +292,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-element">
+            <li
+              class="team-element"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <img
                 srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
                 src="./images/camila.jpg"
@@ -319,7 +342,13 @@
                 </ul>
               </div>
             </li>
-            <li class="team-element">
+            <li
+              class="team-element"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="750"
+              data-aos-delay="750"
+            >
               <img
                 srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 src="./images/daniel.jpg"
@@ -651,5 +680,9 @@
     <script defer src="js/mobile-menu.js"></script>
     <!-- JS -->
     <script src="./js/modal.js"></script>
+    <!-- Scroll animation -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
