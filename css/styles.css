@@ -171,14 +171,18 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 80px 35px 40px 40px;
+  /* padding: 80px 35px 40px 40px; */
   background-color: var(--main-background-color);
   z-index: 999;
 
   transform: translateX(100%);
   transition: transform 250ms var(--trns-bezier);
 }
-
+.menu-wrapper {
+  max-width: 353px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -740,10 +744,10 @@ button {
 
 .footer-form-container {
   width: 100%;
-  max-width: 398px;
 }
 .footer-form-label {
   width: 100%;
+  max-width: 398px;
 }
 .footer-form-input {
   width: 100%;
@@ -809,6 +813,9 @@ button {
     flex-direction: row;
     gap: 24px;
   }
+  .footer-form-label {
+    max-width: 264px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -819,6 +826,7 @@ button {
   .footer-container {
     gap: 80px;
     max-width: 1158px;
+    flex-wrap: nowrap;
   }
   .footer-logo-container {
     margin-right: 40px;
