@@ -923,6 +923,7 @@ button {
     color: var(--secondary-background-color);
     position: absolute;
     top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     transform: translateY(100%);
