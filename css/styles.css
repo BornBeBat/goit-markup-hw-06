@@ -171,7 +171,6 @@ button {
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* padding: 80px 35px 40px 40px; */
   background-color: var(--main-background-color);
   z-index: 999;
 
@@ -509,8 +508,6 @@ button {
 @media screen and (min-width: 1158px) {
   .doing {
     display: block;
-  }
-  .doing-container {
     padding-bottom: 120px;
   }
   .doing-main-title {
