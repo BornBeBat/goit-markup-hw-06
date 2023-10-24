@@ -178,6 +178,8 @@ button {
   transition: transform 250ms var(--trns-bezier);
 }
 .menu-wrapper {
+  position: relative;
+  left: -2px;
   max-width: 353px;
   margin: 0 auto;
   padding-top: 80px;
