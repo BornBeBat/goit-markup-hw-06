@@ -1059,9 +1059,11 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 38px;
+  padding: 11px 38px;
+  padding-right: 0;
   outline: transparent;
   transition: border-color var(--trns-bezier);
+  color: var(--main-title-color);
 }
 .modal-icon {
   position: absolute;
@@ -1088,6 +1090,10 @@ button {
   outline: transparent;
   resize: none;
   transition: border-color var(--trns-bezier);
+  color: var(--main-title-color);
+}
+.modal-textarea::placeholder {
+  opacity: 0.4;
 }
 
 .modal-form-last-container:focus-within .modal-textarea {
