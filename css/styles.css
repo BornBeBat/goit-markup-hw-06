@@ -1119,19 +1119,19 @@ button {
 =================================================*/
 .modal-textarea:not(:placeholder-shown):required:valid {
   border-color: lightgreen;
-  box-shadow: 0 0 10px lightgreen;
+  box-shadow: 0 0 5px lightgreen;
 }
 .modal-textarea:not(:placeholder-shown):required:invalid {
   border-color: orangered;
-  box-shadow: 0 0 10px orangered;
+  box-shadow: 0 0 5px orangered;
 }
 .modal-input:not(:placeholder-shown):required:valid {
   border-color: lightgreen;
-  box-shadow: 0 0 10px lightgreen;
+  box-shadow: 0 0 5px lightgreen;
 }
 .modal-input:not(:placeholder-shown):required:invalid {
   border-color: orangered;
-  box-shadow: 0 0 10px orangered;
+  box-shadow: 0 0 5px orangered;
 }
 /* =================================================
 ===========(warnings and fine)==========
