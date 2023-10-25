@@ -1095,12 +1095,129 @@ button {
 .modal-textarea::placeholder {
   opacity: 0.4;
 }
+/* =================================================
+===========(исчезновение плейсхолдера без фокуса)==========
+=================================================*/
+.modal-input::placeholder {
+  opacity: 0;
+  transition: opacity 0ms;
+}
+.modal-input:focus::placeholder {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out;
+}
+.modal-textarea::placeholder {
+  opacity: 0;
+  transition: opacity 0ms;
+}
+.modal-textarea:focus::placeholder {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out;
+}
+/* =================================================
+===========(подсветка поля при валидации)==========
+=================================================*/
+.modal-textarea:not(:placeholder-shown):required:valid {
+  border-color: lightgreen;
+  box-shadow: 0 0 10px lightgreen;
+}
+.modal-textarea:not(:placeholder-shown):required:invalid {
+  border-color: orangered;
+  box-shadow: 0 0 10px orangered;
+}
+.modal-input:not(:placeholder-shown):required:valid {
+  border-color: lightgreen;
+  box-shadow: 0 0 10px lightgreen;
+}
+.modal-input:not(:placeholder-shown):required:invalid {
+  border-color: orangered;
+  box-shadow: 0 0 10px orangered;
+}
+/* =================================================
+===========(warnings and fine)==========
+=================================================*/
+.modal-icon-warning,
+.modal-icon-aggre {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%) scale(0.1);
+  right: 16px;
+  opacity: 0;
+  transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+}
+.modal-input:not(:placeholder-shown):required:invalid ~ .modal-icon-warning {
+  opacity: 1;
+  transform: translateY(50%) scale(1);
+}
+.modal-input:not(:placeholder-shown):required:valid ~ .modal-icon-aggre {
+  opacity: 1;
+  transform: translateY(50%) scale(1);
+}
 
+.modal-warning-name {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-15px) scale(0.6);
+  color: orangered;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 400ms ease-in-out;
+}
+.modal-input:not(:placeholder-shown):required:invalid ~ .modal-warning-name {
+  opacity: 1;
+  visibility: visible;
+}
+/* ==================form textarea============= */
+.modal-form-last-container {
+  position: relative;
+}
+.modal-icon-warningta,
+.modal-icon-aggreta {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  transform: scale(0.1);
+  opacity: 0;
+  transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+}
+.modal-textarea:not(:placeholder-shown):required:invalid
+  ~ .modal-icon-warningta {
+  opacity: 1;
+  transform: scale(1);
+}
+.modal-textarea:not(:placeholder-shown):required:valid ~ .modal-icon-aggreta {
+  opacity: 1;
+  transform: scale(1);
+}
+.modal-warning-ta {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(0.6);
+  color: orangered;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 400ms ease-in-out;
+}
+.modal-textarea:not(:placeholder-shown):required:invalid ~ .modal-warning-ta {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ====================================================== */
 .modal-form-last-container:focus-within .modal-textarea {
   border-color: var(--logo-color);
 }
 .modal-form-check-container {
   margin-bottom: 24px;
+}
+.form-agrrement {
+  user-select: none;
 }
 .form-span {
   display: inline-flex;
