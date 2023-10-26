@@ -201,6 +201,18 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
 }
+/* =================================================
+===========(перевірка неможливості стану використання ховера)==========
+=================================================*/
+@media not (hover: hover) {
+  .menu-close-toggle:active {
+    border: none;
+    background-color: var(--hover-link);
+  }
+  .menu-close-toggle:active .menu-icon-close {
+    fill: var(--main-background-color);
+  }
+}
 .header-nav {
   display: flex;
   align-items: center;
