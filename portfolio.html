@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=320, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/bat.svg" type="image/x-icon" />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -415,44 +415,47 @@
 
     <!-- Mobile Menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-close-toggle js-close-menu">
-        <svg class="menu-icon-close" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-
-      <ul class="header-nav-list-mobile list">
-        <li class="header-nav-item-mobile">
-          <a href="./index.html" class="header-nav-link-mobile link">Studio</a>
-        </li>
-        <li class="header-nav-item-mobile">
-          <a href="./portfolio.html" class="header-nav-link-mobile link current"
-            >Portfolio</a
-          >
-        </li>
-        <li class="header-nav-item-mobile">
-          <a href="" class="header-nav-link-mobile last link">Contacts</a>
-        </li>
-      </ul>
-      <address class="header-address-list-mobile">
+      <div class="menu-wrapper">
+        <button type="button" class="menu-close-toggle js-close-menu">
+          <svg class="menu-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <ul class="header-nav-list-mobile list">
-          <li>
-            <a
-              href="tel:+110001111111"
-              class="header-contact-mobile phone text link"
-              >+11 (000) 111-11-11</a
+          <li class="header-nav-item-mobile">
+            <a href="./index.html" class="header-nav-link-mobile link"
+              >Studio</a
             >
           </li>
-          <li class="header-contact-mobile-mail">
+          <li class="header-nav-item-mobile">
             <a
-              href="mailto:info@devstudio.com"
-              class="header-contact-mobile mail text link"
-              >info@devstudio.com</a
+              href="./portfolio.html"
+              class="header-nav-link-mobile link current"
+              >Portfolio</a
             >
+          </li>
+          <li class="header-nav-item-mobile">
+            <a href="" class="header-nav-link-mobile last link">Contacts</a>
           </li>
         </ul>
-      </address>
-      <div class="team-card-content">
+        <address class="header-address-list-mobile">
+          <ul class="header-nav-list-mobile list">
+            <li>
+              <a
+                href="tel:+110001111111"
+                class="header-contact-mobile phone text link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="header-contact-mobile-mail">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-contact-mobile mail text link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
         <ul class="team-card-list mobile list">
           <li class="team-card-item">
             <a href="" class="team-card-social-link">
