@@ -1194,6 +1194,7 @@ button {
 /* ==================form textarea============= */
 .modal-form-last-container {
   position: relative;
+  height: 138px;
 }
 .modal-icon-warningta,
 .modal-icon-aggreta {
