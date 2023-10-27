@@ -178,8 +178,6 @@ button {
   transition: transform 400ms var(--trns-bezier);
 }
 .menu-wrapper {
-  position: relative;
-  left: -2px;
   max-width: 353px;
   margin: 0 auto;
   padding-top: 80px;
@@ -240,17 +238,20 @@ button {
 .header-contact-mobile.phone {
   color: var(--logo-color);
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
   display: block;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 360px) {
+  .header-contact-mobile.phone {
+    font-size: clamp(32px, 10vw, 36px);
+  }
+}
 .header-contact-mobile-mail,
 .header-contact-mobile.mail {
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.4px;
@@ -260,6 +261,11 @@ button {
   padding: 0;
   justify-content: start;
   gap: 56px;
+}
+@media screen and (max-width: 360px) {
+  .team-card-list.mobile {
+    gap: clamp(10px, 15.5vw, 56px);
+  }
 }
 .header-logo {
   margin-right: 76px;
@@ -438,7 +444,7 @@ button {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   width: 320px;
-  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom var(--trns-bezier);
 }
 
 @keyframes slide-bottom {
@@ -1065,6 +1071,11 @@ button {
   transition: transform var(--trns-bezier), opacity 150ms ease-in-out;
   transition-delay: 300ms;
 }
+@media screen and (max-width: 392.98px) {
+  .modal-window {
+    width: clamp(320px, 100vw, 392px);
+  }
+}
 @media screen and (min-width: 768px) {
   .modal-window {
     width: 408px;
@@ -1090,6 +1101,13 @@ button {
 }
 .modal-button-close-icon {
   fill: currentColor;
+}
+@media screen and (max-width: 767.98px) {
+  .modal-button-close:active {
+    background-color: var(--hover-link);
+    color: var(--main-background-color);
+    outline: none;
+  }
 }
 @media screen and (min-width: 1158px) {
   .modal-button-close:hover,
