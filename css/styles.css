@@ -841,7 +841,14 @@ button {
   background-color: var(--logo-color);
   border: none;
   border-radius: 4px;
+  transition: background-color var(--trns-bezier);
 }
+/* @media screen and (min-width: 1158px) { */
+.footer-form-btn:hower,
+.footer-form-btn:focus {
+  background-color: var(--footer-green);
+}
+/* } */
 .footer-form-icon {
   margin-left: 16px;
   fill: currentColor;
@@ -1338,6 +1345,12 @@ button {
   border: none;
   border-radius: 4px;
   transition: background-color var(--trns-bezier);
+}
+@media screen and (min-width: 1158px) {
+  .modal-form-btn:hover,
+  .modal-form-btn:focus {
+    background-color: var(--hover-link);
+  }
 }
 
 /* =========================================/Modal Window================================== */
